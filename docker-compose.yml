@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    image: scratch3:12.16-alpine3.11
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    user: "node:node"
+    restart: always
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8601:8601
+    volumes:
+        - ~/work/data/scratch:/usr/src/app
+    tty: true

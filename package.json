@@ -1,0 +1,11 @@
+{
+  "name": "scratch3-gui-local",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "cd scratch-gui && yarn start",
+    "build": "cd scratch-gui && yarn build",
+    "prelink": "yarn link:vm && yarn link:p",
+    "link:vm": "cd scratch-vm && yarn link",
+    "link:p": "cd scratch-gui && yarn link scratch-vm"
+  }
+}
