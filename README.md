@@ -2,18 +2,18 @@
 
 ## How To Install
 
-1. インストールファイルのclone
+**1. インストールファイルのclone**
 ```
 git clone https://github.com/ken992/Scratch3.0/
 ```
 
-2. dockerのbuild
+**2. dockerのbuild**
 ```
 cd Scratch3.0
 docker-compose up -d
 ```
 
-3. Scratch3.0のinstall状況確認
+**3. Scratch3.0のinstall状況確認**
 ```
 docker-compose logs -f
 ``` 
@@ -26,7 +26,7 @@ success Saved lockfile.
 Done in 78.74s.
 ```
 
-4. Scratchのサービス起動
+**4. Scratchのサービス起動**
 ```
 docker-compose exec app yarn start
 ```
@@ -36,7 +36,7 @@ docker-compose exec app yarn start
 ｢wdm｣: Compiled successfully.
 ```
 
-5. ブラウザにアクセスする
+**5. ブラウザにアクセスする**
 ```
 http://0.0.0.0:8601/
 ```
